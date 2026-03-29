@@ -1,6 +1,8 @@
 // ===== INJECT HEADER =====
 function injectHeader() {
-  const html = `
+  
+  function injectHeader() {
+    const html = `
   <header id="site-header">
     <div class="container">
       <nav class="nav-inner">
@@ -28,24 +30,12 @@ function injectHeader() {
     <a href="contact.html" class="nav-cta">Let's Talk →</a>
   </div>
   `;document.addEventListener("DOMContentLoaded", function () {
-
-  function injectHeader() {
-    const html = `...your header code...`;
+;
     document.getElementById("header").innerHTML = html;
   }
 
   function injectFooter() {
-    const html = `...your footer code...`;
-    document.getElementById("footer").innerHTML = html;
-  }
-
-  injectHeader();
-  injectFooter();
-
-});
-}
-
-// ===== INJECT FOOTER =====
+    const html = `// ===== INJECT FOOTER =====
 function injectFooter() {
   const year = new Date().getFullYear();
   const html = `
@@ -102,7 +92,17 @@ function injectFooter() {
   </a>
   `;
   document.body.insertAdjacentHTML('beforeend', html);
+}`;
+    document.getElementById("footer").innerHTML = html;
+  }
+
+  injectHeader();
+  injectFooter();
+
+});
 }
+
+
 
 injectHeader();
 injectFooter();
