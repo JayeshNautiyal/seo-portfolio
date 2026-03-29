@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Pricing India | Affordable SEO Plans | Jayesh Nautiyal</title>
+  <meta name="description" content="Transparent SEO pricing plans for startups and businesses in India. Starter, Growth, and Custom plans available. No hidden fees." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .pricing-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start; }
+    .toggle-wrap { display:flex;align-items:center;gap:16px;justify-content:center;margin-bottom:48px; }
+    .toggle-label { font-size:0.9rem;color:var(--text2); }
+    .toggle-label.active { color:var(--accent);font-weight:600; }
+    .toggle {
+      width:52px;height:28px;background:var(--bg3);border:1px solid var(--border);
+      border-radius:100px;position:relative;cursor:pointer;transition:background var(--transition);
+    }
+    .toggle.on { background:var(--accent); }
+    .toggle::after {
+      content:'';position:absolute;top:3px;left:3px;
+      width:20px;height:20px;background:#000;border-radius:50%;
+      transition:left var(--transition);
+    }
+    .toggle.on::after { left:27px; }
+    .save-badge {
+      background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.2);
+      color:var(--accent);font-size:0.75rem;font-weight:700;
+      padding:3px 10px;border-radius:100px;
+    }
+    .compare-table { width:100%;border-collapse:collapse;margin-top:64px; }
+    .compare-table th, .compare-table td { padding:16px 20px;text-align:left;border-bottom:1px solid var(--border); }
+    .compare-table th { font-size:0.8rem;letter-spacing:0.05em;text-transform:uppercase;color:var(--text3);font-family:var(--font-mono); }
+    .compare-table td:first-child { color:var(--text2);font-size:0.9rem; }
+    .compare-table td:not(:first-child) { text-align:center;font-size:0.9rem; }
+    .compare-table tr:hover td { background:var(--bg3); }
+    .compare-table th:nth-child(3) { color:var(--accent); }
+    .check-y { color:var(--accent);font-size:1.1rem; }
+    .check-n { color:var(--text3);font-size:1.1rem; }
+    @media(max-width:768px){
+      .pricing-grid{grid-template-columns:1fr;}
+      .compare-table{display:none;}
+    }
+  </style>
+</head>
+<body>
+<script src="assets/js/layout.js"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">Pricing</div>
+      <h1>Simple, <span class="highlight">Transparent</span> Pricing</h1>
+      <p>No hidden fees. No lock-in contracts. Just results-focused SEO that grows with your business.</p>
+    </div>
+
+    <div class="toggle-wrap">
+      <span class="toggle-label active" id="monthly-label">Monthly</span>
+      <div class="toggle" id="billing-toggle"></div>
+      <span class="toggle-label" id="yearly-label">Yearly <span class="save-badge">Save 20%</span></span>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- STARTER -->
+      <div class="pricing-card fade-up">
+        <div class="tag">Starter</div>
+        <div class="pricing-price" id="price-starter">₹15,000<span>/mo</span></div>
+        <div class="pricing-period">Ideal for small businesses & new websites</div>
+        <div class="pricing-features">
+          <div class="pricing-feature"><span class="check">✓</span> Technical SEO Audit</div>
+          <div class="pricing-feature"><span class="check">✓</span> 10 Pages On-Page Optimisation</div>
+          <div class="pricing-feature"><span class="check">✓</span> 5 Target Keywords</div>
+          <div class="pricing-feature"><span class="check">✓</span> Google Business Profile Setup</div>
+          <div class="pricing-feature"><span class="check">✓</span> Monthly Report</div>
+          <div class="pricing-feature"><span class="check">✓</span> 2 Blog Posts/Month</div>
+          <div class="pricing-feature"><span class="cross" style="color:var(--text3)">✗</span> <span style="color:var(--text3)">Link Building</span></div>
+          <div class="pricing-feature"><span class="cross" style="color:var(--text3)">✗</span> <span style="color:var(--text3)">Competitor Analysis</span></div>
+          <div class="pricing-feature"><span class="cross" style="color:var(--text3)">✗</span> <span style="color:var(--text3)">Weekly Check-ins</span></div>
+        </div>
+        <a href="contact.html?plan=starter" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+
+      <!-- GROWTH (FEATURED) -->
+      <div class="pricing-card featured fade-up">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="tag" style="background:rgba(0,229,160,0.1);border-color:rgba(0,229,160,0.3);color:var(--accent);">Growth</div>
+        <div class="pricing-price" id="price-growth">₹30,000<span>/mo</span></div>
+        <div class="pricing-period">Perfect for startups & growing brands</div>
+        <div class="pricing-features">
+          <div class="pricing-feature"><span class="check">✓</span> Full Technical SEO Audit</div>
+          <div class="pricing-feature"><span class="check">✓</span> 25 Pages On-Page Optimisation</div>
+          <div class="pricing-feature"><span class="check">✓</span> 15 Target Keywords</div>
+          <div class="pricing-feature"><span class="check">✓</span> Google Business Profile Optimisation</div>
+          <div class="pricing-feature"><span class="check">✓</span> Weekly Reporting Dashboard</div>
+          <div class="pricing-feature"><span class="check">✓</span> 6 Blog Posts/Month</div>
+          <div class="pricing-feature"><span class="check">✓</span> Link Building (10 links/mo)</div>
+          <div class="pricing-feature"><span class="check">✓</span> Full Competitor Analysis</div>
+          <div class="pricing-feature"><span class="check">✓</span> Bi-weekly Strategy Calls</div>
+        </div>
+        <a href="contact.html?plan=growth" class="btn btn-primary" style="width:100%;justify-content:center;">Start Growing →</a>
+      </div>
+
+      <!-- CUSTOM -->
+      <div class="pricing-card fade-up">
+        <div class="tag">Custom</div>
+        <div class="pricing-price">Custom<span></span></div>
+        <div class="pricing-period">For enterprises & agencies</div>
+        <div class="pricing-features">
+          <div class="pricing-feature"><span class="check">✓</span> Everything in Growth</div>
+          <div class="pricing-feature"><span class="check">✓</span> Unlimited Pages</div>
+          <div class="pricing-feature"><span class="check">✓</span> Unlimited Keywords</div>
+          <div class="pricing-feature"><span class="check">✓</span> International SEO</div>
+          <div class="pricing-feature"><span class="check">✓</span> Daily Reporting</div>
+          <div class="pricing-feature"><span class="check">✓</span> Unlimited Blog Posts</div>
+          <div class="pricing-feature"><span class="check">✓</span> Aggressive Link Building</div>
+          <div class="pricing-feature"><span class="check">✓</span> Dedicated Strategy Doc</div>
+          <div class="pricing-feature"><span class="check">✓</span> Weekly Strategy Calls</div>
+        </div>
+        <a href="contact.html?plan=custom" class="btn btn-outline" style="width:100%;justify-content:center;">Contact for Pricing</a>
+      </div>
+    </div>
+
+    <!-- Compare Table -->
+    <div class="fade-up">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Starter</th>
+            <th>Growth ★</th>
+            <th>Custom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Technical Audit</td><td class="check-y">✓ Basic</td><td class="check-y">✓ Full</td><td class="check-y">✓ Advanced</td></tr>
+          <tr><td>On-Page Optimisation</td><td>10 pages</td><td>25 pages</td><td>Unlimited</td></tr>
+          <tr><td>Target Keywords</td><td>5</td><td>15</td><td>Unlimited</td></tr>
+          <tr><td>Blog Posts / Month</td><td>2</td><td>6</td><td>Unlimited</td></tr>
+          <tr><td>Link Building</td><td class="check-n">✗</td><td>10/mo</td><td>Custom</td></tr>
+          <tr><td>Google Business Profile</td><td class="check-y">✓ Setup</td><td class="check-y">✓ Full Opt.</td><td class="check-y">✓ Full Opt.</td></tr>
+          <tr><td>Competitor Analysis</td><td class="check-n">✗</td><td class="check-y">✓</td><td class="check-y">✓</td></tr>
+          <tr><td>International SEO</td><td class="check-n">✗</td><td class="check-n">✗</td><td class="check-y">✓</td></tr>
+          <tr><td>Strategy Calls</td><td>Monthly</td><td>Bi-weekly</td><td>Weekly</td></tr>
+          <tr><td>Reporting</td><td>Monthly</td><td>Weekly</td><td>Daily</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Startup Section -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="grid-2" style="gap:64px;align-items:center;">
+      <div class="fade-up">
+        <div class="badge">For Startups</div>
+        <h2>Special Plans for <span class="highlight">Startups</span></h2>
+        <p style="margin:16px 0;">Early-stage startup with limited runway? I offer performance-based and milestone-based pricing models designed specifically for growth-stage companies.</p>
+        <div class="steps" style="margin:24px 0;">
+          <div class="step">
+            <div class="step-num">🚀</div>
+            <div class="step-content">
+              <h4>Startup Discount</h4>
+              <p>20% off on Growth plan for funded startups under 2 years old.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">📈</div>
+            <div class="step-content">
+              <h4>Performance-Based Option</h4>
+              <p>Pay based on keyword rankings and traffic milestones achieved.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">🤝</div>
+            <div class="step-content">
+              <h4>Equity Partnership</h4>
+              <p>For exceptional founding teams, open to partial equity arrangements.</p>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Discuss Startup Pricing →</a>
+      </div>
+      <div class="fade-up">
+        <div class="card" style="padding:40px;">
+          <h4 style="margin-bottom:24px;">Frequently Asked</h4>
+          <div class="faq-item">
+            <div class="faq-question">Is there a minimum contract? <span class="faq-arrow">+</span></div>
+            <div class="faq-answer"><p>I recommend a 3-month minimum to see meaningful SEO results. SEO is a long-term investment — most significant results appear in months 3–6.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do you guarantee rankings? <span class="faq-arrow">+</span></div>
+            <div class="faq-answer"><p>No one can guarantee exact rankings — Google's algorithm is the final decision-maker. I do guarantee transparent work, consistent effort, and data-backed strategies that consistently produce results.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What's included in the audit? <span class="faq-arrow">+</span></div>
+            <div class="faq-answer"><p>Technical analysis, keyword gaps, competitor benchmarking, content audit, backlink profile review, and a prioritised action plan — all in a detailed PDF report.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I upgrade/downgrade plans? <span class="faq-arrow">+</span></div>
+            <div class="faq-answer"><p>Absolutely. You can change plans at the end of any month with 15 days notice. No penalty, no lock-in.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-section fade-up">
+      <h2 style="margin-bottom:16px;">Start With a <span class="highlight">Free Audit</span></h2>
+      <p style="max-width:480px;margin:0 auto 36px;">Before you commit to any plan, let me audit your site for free and show you exactly what's holding you back from ranking.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Get Free SEO Audit →</a>
+        <a href="tel:+919619955997" class="btn btn-outline">📞 +91 96199 55997</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const toggle = document.getElementById('billing-toggle');
+const mL = document.getElementById('monthly-label');
+const yL = document.getElementById('yearly-label');
+const ps = document.getElementById('price-starter');
+const pg = document.getElementById('price-growth');
+let yearly = false;
+toggle.addEventListener('click', () => {
+  yearly = !yearly;
+  toggle.classList.toggle('on', yearly);
+  mL.classList.toggle('active', !yearly);
+  yL.classList.toggle('active', yearly);
+  if (yearly) {
+    ps.innerHTML = '₹1,44,000<span>/yr</span>';
+    pg.innerHTML = '₹2,88,000<span>/yr</span>';
+  } else {
+    ps.innerHTML = '₹15,000<span>/mo</span>';
+    pg.innerHTML = '₹30,000<span>/mo</span>';
+  }
+});
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

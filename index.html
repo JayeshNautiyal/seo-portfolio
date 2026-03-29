@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelance SEO Expert in India | Jayesh Nautiyal</title>
+  <meta name="description" content="Hire Jayesh Nautiyal – top freelance SEO expert in India. Specialising in startup SEO, technical SEO, and local SEO across Mumbai, Delhi, Bangalore." />
+  <meta name="keywords" content="freelance seo expert india, seo freelancer mumbai, hire seo expert india, startup seo india" />
+  <meta name="author" content="Jayesh Nautiyal" />
+  <link rel="canonical" href="https://yourdomain.com/index.html" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Freelance SEO Expert in India | Jayesh Nautiyal" />
+  <meta property="og:description" content="Data-driven SEO strategies for startups and businesses across India." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+      padding: 120px 0 80px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 20% 50%, rgba(0,229,160,0.07) 0%, transparent 70%),
+                  radial-gradient(ellipse 60% 60% at 80% 20%, rgba(0,102,255,0.06) 0%, transparent 70%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: center;
+    }
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow .line { height: 1px; width: 40px; background: var(--accent); }
+    .hero-eyebrow span {
+      font-family: var(--font-mono);
+      font-size: 0.8rem; color: var(--accent);
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .hero h1 { margin-bottom: 24px; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero-desc { font-size: 1.1rem; margin-bottom: 40px; max-width: 460px; }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 56px; }
+    .hero-stats {
+      display: flex; gap: 40px;
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+    }
+    .hero-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .hero-stat span { font-size: 0.85rem; color: var(--text2); }
+
+    /* Hero visual */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card-main {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-card-main::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+    .chart-bars {
+      display: flex; align-items: flex-end; gap: 8px;
+      height: 120px; margin: 24px 0;
+    }
+    .bar {
+      flex: 1; border-radius: 6px 6px 0 0;
+      background: var(--bg3);
+      position: relative; overflow: hidden;
+      animation: growBar 1.5s ease forwards;
+    }
+    .bar::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, var(--accent), rgba(0,229,160,0.3));
+      transform: scaleY(0); transform-origin: bottom;
+      animation: fillBar 1.5s ease forwards;
+    }
+    .bar:nth-child(1)::after { animation-delay: 0.1s; }
+    .bar:nth-child(2)::after { animation-delay: 0.2s; }
+    .bar:nth-child(3)::after { animation-delay: 0.3s; }
+    .bar:nth-child(4)::after { animation-delay: 0.4s; }
+    .bar:nth-child(5)::after { animation-delay: 0.5s; }
+    .bar:nth-child(6)::after { animation-delay: 0.6s; }
+    @keyframes fillBar { to { transform: scaleY(1); } }
+    .b1{height:40%} .b2{height:55%} .b3{height:45%} .b4{height:70%} .b5{height:85%} .b6{height:100%}
+    .chart-label {
+      display: flex; justify-content: space-between;
+      font-family: var(--font-mono); font-size: 0.7rem; color: var(--text3);
+    }
+    .hero-metric {
+      display: flex; align-items: center; gap: 12px;
+      background: var(--bg3);
+      border-radius: 10px; padding: 14px 16px;
+      margin-top: 16px;
+    }
+    .metric-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .metric-label { font-size: 0.85rem; color: var(--text2); flex: 1; }
+    .metric-val { font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+
+    .hero-badge-float {
+      position: absolute;
+      top: -16px; right: -16px;
+      background: var(--accent);
+      color: #000;
+      border-radius: 14px;
+      padding: 14px 18px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.85rem;
+      line-height: 1.3;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,229,160,0.3);
+    }
+    .hero-badge-float strong { display: block; font-size: 1.6rem; }
+
+    /* Clients logos */
+    .clients-row {
+      display: flex; align-items: center; gap: 32px;
+      flex-wrap: wrap; margin-top: 16px;
+    }
+    .client-logo {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text3);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color var(--transition);
+    }
+    .client-logo:hover { color: var(--text2); }
+
+    /* Services grid */
+    .service-icon { font-size: 2rem; margin-bottom: 16px; }
+
+    /* Location cards */
+    .location-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: all var(--transition);
+      position: relative; overflow: hidden;
+    }
+    .location-card::after {
+      content: '→';
+      position: absolute; bottom: 24px; right: 24px;
+      color: var(--accent);
+      font-size: 1.2rem;
+      opacity: 0;
+      transition: all var(--transition);
+    }
+    .location-card:hover::after { opacity: 1; }
+    .location-card:hover { border-color: rgba(0,229,160,0.2); transform: translateY(-4px); }
+    .location-card h4 { margin: 12px 0 8px; }
+    .location-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      background: rgba(0,229,160,0.08);
+      padding: 3px 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-visual { display: none; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+<script src="assets/js/layout.js"></script>
+
+<!-- MARQUEE -->
+<div class="marquee-section" style="margin-top:72px;">
+  <div class="marquee-track">
+    <div class="marquee-item">Technical SEO</div>
+    <div class="marquee-item">On-Page Optimisation</div>
+    <div class="marquee-item">Link Building</div>
+    <div class="marquee-item">Content Strategy</div>
+    <div class="marquee-item">Startup SEO</div>
+    <div class="marquee-item">Local SEO India</div>
+    <div class="marquee-item">Core Web Vitals</div>
+    <div class="marquee-item">Keyword Research</div>
+    <div class="marquee-item">Google Rankings</div>
+    <div class="marquee-item">Technical SEO</div>
+    <div class="marquee-item">On-Page Optimisation</div>
+    <div class="marquee-item">Link Building</div>
+    <div class="marquee-item">Content Strategy</div>
+    <div class="marquee-item">Startup SEO</div>
+    <div class="marquee-item">Local SEO India</div>
+    <div class="marquee-item">Core Web Vitals</div>
+    <div class="marquee-item">Keyword Research</div>
+    <div class="marquee-item">Google Rankings</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="line"></div>
+          <span>Freelance SEO Expert · India</span>
+        </div>
+        <h1>Rank Higher.<br>Grow <em>Faster.</em><br>Scale Smarter.</h1>
+        <p class="hero-desc">I help Indian startups and businesses dominate Google search with data-driven SEO strategies that generate real, sustainable traffic — not just rankings.</p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary">Get Free SEO Audit →</a>
+          <a href="startups/case-studies.html" class="btn btn-outline">View Case Studies</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong><span data-count="50" data-suffix="+">0+</span></strong>
+            <span>Brands Ranked</span>
+          </div>
+          <div class="hero-stat">
+            <strong><span data-count="300" data-suffix="%">0%</span></strong>
+            <span>Avg Traffic Growth</span>
+          </div>
+          <div class="hero-stat">
+            <strong><span data-count="5" data-suffix=" Yrs">0</span></strong>
+            <span>Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual fade-up">
+        <div class="hero-badge-float">
+          <strong>#1</strong>Google<br>Ranked
+        </div>
+        <div class="hero-card-main">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+            <span style="font-family:var(--font-display);font-weight:700;">Organic Traffic</span>
+            <span class="tag">+324%</span>
+          </div>
+          <div style="font-size:0.8rem;color:var(--text3);font-family:var(--font-mono);">Last 6 months</div>
+          <div class="chart-bars">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
+            <div class="bar b5"></div>
+            <div class="bar b6"></div>
+          </div>
+          <div class="chart-label">
+            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+          </div>
+          <div class="hero-metric">
+            <div class="metric-dot"></div>
+            <span class="metric-label">Keyword Rankings (Top 10)</span>
+            <span class="metric-val">↑ 142</span>
+          </div>
+          <div class="hero-metric">
+            <div class="metric-dot" style="background:var(--accent2)"></div>
+            <span class="metric-label">Domain Authority</span>
+            <span class="metric-val" style="color:var(--accent2)">DA 52 → 71</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clients -->
+    <div style="margin-top:64px;padding-top:32px;border-top:1px solid var(--border);">
+      <p style="font-size:0.8rem;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px;font-family:var(--font-mono);">Trusted by startups & businesses</p>
+      <div class="clients-row">
+        <div class="client-logo">TechStart</div>
+        <div class="client-logo">GrowthLab</div>
+        <div class="client-logo">Nexora</div>
+        <div class="client-logo">Zenvio</div>
+        <div class="client-logo">Buildify</div>
+        <div class="client-logo">Rankify</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="badge">What I Do</div>
+      <h2>SEO Services That <span class="highlight">Actually Work</span></h2>
+      <p>From technical audits to content strategy — every service is built around one goal: getting your business to page one of Google and keeping it there.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card fade-up">
+        <div class="icon-box">⚙️</div>
+        <h4>Technical SEO</h4>
+        <p>Fix crawl errors, improve site speed, implement schema markup, and ensure Google can index every page perfectly.</p>
+        <a href="services.html#technical" class="btn btn-ghost">Learn More →</a>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">📝</div>
+        <h4>On-Page SEO</h4>
+        <p>Optimise title tags, meta descriptions, headers, and content to rank for your most profitable keywords.</p>
+        <a href="services.html#onpage" class="btn btn-ghost">Learn More →</a>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">📊</div>
+        <h4>Content Strategy</h4>
+        <p>Build topical authority with a data-backed content plan that attracts high-intent visitors and converts them.</p>
+        <a href="services.html#content" class="btn btn-ghost">Learn More →</a>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">📍</div>
+        <h4>Local SEO</h4>
+        <p>Dominate Google Maps and local search results for your city. Perfect for businesses targeting Mumbai, Delhi, Bangalore.</p>
+        <a href="services.html#local" class="btn btn-ghost">Learn More →</a>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">🚀</div>
+        <h4>Startup SEO</h4>
+        <p>ROI-focused SEO roadmaps designed for early-stage startups — prioritise fast wins while building long-term authority.</p>
+        <a href="startups/startup-seo.html" class="btn btn-ghost">Learn More →</a>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">🌐</div>
+        <h4>International SEO</h4>
+        <p>Expand your reach globally with hreflang implementation, geo-targeting, and multilingual content strategies.</p>
+        <a href="services.html#international" class="btn btn-ghost">Learn More →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="services.html" class="btn btn-outline">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="badge">Locations</div>
+      <h2>SEO Expertise Across <span class="highlight">All of India</span></h2>
+      <p>Whether you're in Mumbai, Delhi, Bangalore, or anywhere in India — I deliver the same high-quality SEO results with local market knowledge.</p>
+    </div>
+    <div class="grid-4">
+      <a href="locations/india.html" class="location-card fade-up">
+        <div class="location-tag">National</div>
+        <h4>India</h4>
+        <p style="font-size:0.9rem;">Pan-India SEO campaigns for brands looking to dominate across the country.</p>
+      </a>
+      <a href="locations/mumbai.html" class="location-card fade-up">
+        <div class="location-tag">Maharashtra</div>
+        <h4>Mumbai</h4>
+        <p style="font-size:0.9rem;">SEO for Mumbai businesses — finance, real estate, e-commerce, and more.</p>
+      </a>
+      <a href="locations/delhi.html" class="location-card fade-up">
+        <div class="location-tag">NCR</div>
+        <h4>Delhi</h4>
+        <p style="font-size:0.9rem;">Rank for high-competition Delhi keywords and capture the massive NCR market.</p>
+      </a>
+      <a href="locations/bangalore.html" class="location-card fade-up">
+        <div class="location-tag">Karnataka</div>
+        <h4>Bangalore</h4>
+        <p style="font-size:0.9rem;">Startup-friendly SEO for Bangalore's booming tech and SaaS ecosystem.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STARTUP PITCH -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:80px;">
+      <div class="fade-up">
+        <div class="badge">For Startups</div>
+        <h2>SEO That Scales With Your <span class="highlight">Startup</span></h2>
+        <p style="margin:20px 0;">Most agencies charge ₹1–2L/month for bloated retainers. I give you an ROI-focused SEO roadmap built for early-stage companies — quick wins in 30–60 days, compounding growth in 6 months.</p>
+        <div class="steps" style="margin:32px 0;">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h4>Audit & Strategy</h4>
+              <p>Deep technical audit + keyword research + competitor gap analysis.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h4>Quick Wins</h4>
+              <p>Fix critical issues, optimise existing pages, target low-competition keywords first.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h4>Scale & Compound</h4>
+              <p>Build authority, scale content, earn links — create a traffic flywheel.</p>
+            </div>
+          </div>
+        </div>
+        <a href="startups/startup-seo.html" class="btn btn-primary">Startup SEO Plans →</a>
+      </div>
+      <div class="fade-up">
+        <div class="card" style="padding:40px;">
+          <h4 style="margin-bottom:24px;font-size:1.1rem;color:var(--text2);">Typical Results at 6 Months</h4>
+          <div style="display:flex;flex-direction:column;gap:20px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+                <span style="font-size:0.9rem;">Organic Traffic</span>
+                <span style="color:var(--accent);font-weight:700;">+324%</span>
+              </div>
+              <div style="height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;">
+                <div style="height:100%;width:82%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:4px;animation:fillW 1.5s ease forwards;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+                <span style="font-size:0.9rem;">Keyword Rankings (Top 10)</span>
+                <span style="color:var(--accent2);font-weight:700;">+142</span>
+              </div>
+              <div style="height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;">
+                <div style="height:100%;width:65%;background:linear-gradient(90deg,var(--accent2),#6644ff);border-radius:4px;animation:fillW 1.5s 0.2s ease forwards;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+                <span style="font-size:0.9rem;">Leads from SEO</span>
+                <span style="color:var(--accent3);font-weight:700;">+218%</span>
+              </div>
+              <div style="height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;">
+                <div style="height:100%;width:74%;background:linear-gradient(90deg,var(--accent3),#ff4444);border-radius:4px;animation:fillW 1.5s 0.4s ease forwards;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+                <span style="font-size:0.9rem;">Domain Authority</span>
+                <span style="color:var(--text);font-weight:700;">DA 18 → 52</span>
+              </div>
+              <div style="height:8px;background:var(--bg3);border-radius:4px;overflow:hidden;">
+                <div style="height:100%;width:52%;background:var(--text3);border-radius:4px;animation:fillW 1.5s 0.6s ease forwards;"></div>
+              </div>
+            </div>
+          </div>
+          <style>@keyframes fillW{from{width:0}}</style>
+          <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--border);text-align:center;">
+            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get My Free SEO Audit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="badge">Social Proof</div>
+      <h2>What Clients <span class="highlight">Say</span></h2>
+    </div>
+    <div class="grid-3">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Jayesh took our startup from zero organic traffic to 15,000 monthly visitors in just 5 months. The ROI has been incredible — we've reduced our paid ad spend by 60%."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RK</div>
+          <div class="author-info">
+            <strong>Rahul Kumar</strong>
+            <span>CEO, TechStart India</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Best investment we made for our Mumbai e-commerce store. Jayesh's local SEO strategy helped us rank #1 for 40+ local keywords. Sales are up 180%."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PS</div>
+          <div class="author-info">
+            <strong>Priya Shah</strong>
+            <span>Founder, StyleKart Mumbai</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Transparent reporting, proactive communication, and real results. Our SaaS platform now ranks on page 1 for 8 high-intent keywords. Highly recommended."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div class="author-info">
+            <strong>Arjun Mehta</strong>
+            <span>CTO, Nexora SaaS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section-sm" style="background:var(--bg2);">
+  <div class="container">
+    <div class="grid-4">
+      <div class="stat-box fade-up">
+        <div class="stat-number" data-count="50" data-suffix="+">0+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-box fade-up">
+        <div class="stat-number" data-count="300" data-suffix="%">0%</div>
+        <div class="stat-label">Avg Traffic Growth</div>
+      </div>
+      <div class="stat-box fade-up">
+        <div class="stat-number" data-count="98" data-suffix="%">0%</div>
+        <div class="stat-label">Client Retention</div>
+      </div>
+      <div class="stat-box fade-up">
+        <div class="stat-number" data-count="5" data-suffix=" Yrs">0</div>
+        <div class="stat-label">SEO Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-section fade-up">
+      <div class="badge" style="margin:0 auto 24px;">Ready to Grow?</div>
+      <h2 style="margin-bottom:16px;">Let's Get Your Business to <span class="highlight">Page One</span></h2>
+      <p style="max-width:500px;margin:0 auto 40px;">Book a free 30-minute strategy call. I'll audit your site and show you exactly what's holding you back from ranking — no fluff, no sales pitch.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Book Free Strategy Call →</a>
+        <a href="tel:+919619955997" class="btn btn-outline">📞 +91 96199 55997</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

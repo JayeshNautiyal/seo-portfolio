@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Services India | Technical, Local & Content SEO | Jayesh Nautiyal</title>
+  <meta name="description" content="Comprehensive SEO services: Technical SEO, On-Page SEO, Content Strategy, Local SEO, and International SEO for businesses across India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .service-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-section:last-of-type { border-bottom: none; }
+    .service-section-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+    }
+    .service-section-grid.reverse { direction: rtl; }
+    .service-section-grid.reverse > * { direction: ltr; }
+    .service-list { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+    .service-list-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 16px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .service-list-icon { font-size: 1.2rem; min-width: 24px; }
+    .service-visual {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-visual::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+    .tech-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; margin-top: 20px;
+    }
+    .tech-item {
+      background: var(--bg3);
+      border-radius: 10px; padding: 16px 12px;
+      text-align: center;
+      font-size: 0.8rem; color: var(--text2);
+    }
+    .tech-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .process-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px; }
+    .process-step-sm {
+      flex: 1; min-width: 100px;
+      background: var(--bg3);
+      border-radius: 10px; padding: 16px;
+      text-align: center;
+    }
+    .process-step-sm .num { font-family: var(--font-mono); color: var(--accent); font-size: 0.8rem; margin-bottom: 4px; }
+    .process-step-sm p { font-size: 0.8rem; color: var(--text2); }
+    @media(max-width:768px){
+      .service-section-grid { grid-template-columns: 1fr; gap: 48px; }
+      .service-section-grid.reverse { direction: ltr; }
+      .tech-grid { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+<script src="assets/js/layout.js"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">Services</div>
+      <h1>SEO Services That <span class="highlight">Deliver Results</span></h1>
+      <p>Every service is tailored to your business, executed with precision, and measured by results — not just activity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNICAL SEO -->
+<div id="technical" class="container">
+<div class="service-section">
+  <div class="service-section-grid">
+    <div class="fade-up">
+      <div class="badge">Service 01</div>
+      <h2>Technical <span class="highlight">SEO</span></h2>
+      <p style="margin:16px 0;">A technically sound website is the foundation of every successful SEO campaign. I conduct deep technical audits and fix issues that are silently killing your rankings.</p>
+      <div class="service-list">
+        <div class="service-list-item">
+          <span class="service-list-icon">🔍</span>
+          <div><strong>Crawl & Indexation Audit</strong><p style="font-size:0.9rem;margin:4px 0 0;">Identify and fix crawl errors, orphan pages, and index bloat.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">⚡</span>
+          <div><strong>Core Web Vitals Optimisation</strong><p style="font-size:0.9rem;margin:4px 0 0;">Improve LCP, FID, CLS scores for better rankings and UX.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">🗂️</span>
+          <div><strong>Schema Markup</strong><p style="font-size:0.9rem;margin:4px 0 0;">Implement structured data for rich snippets and better CTR.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">🔒</span>
+          <div><strong>HTTPS, Redirects & Canonicals</strong><p style="font-size:0.9rem;margin:4px 0 0;">Fix duplicate content, redirect chains, and security issues.</p></div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get Technical Audit →</a>
+    </div>
+    <div class="service-visual fade-up">
+      <h4 style="margin-bottom:20px;">Technical Health Score</h4>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.85rem;"><span>Site Speed</span><span style="color:var(--accent)">92/100</span></div>
+          <div style="height:6px;background:var(--bg3);border-radius:4px;"><div style="height:100%;width:92%;background:var(--accent);border-radius:4px;"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.85rem;"><span>Crawlability</span><span style="color:var(--accent2)">87/100</span></div>
+          <div style="height:6px;background:var(--bg3);border-radius:4px;"><div style="height:100%;width:87%;background:var(--accent2);border-radius:4px;"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.85rem;"><span>Indexation</span><span style="color:var(--accent3)">95/100</span></div>
+          <div style="height:6px;background:var(--bg3);border-radius:4px;"><div style="height:100%;width:95%;background:var(--accent3);border-radius:4px;"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:0.85rem;"><span>Schema Coverage</span><span style="color:var(--text)">78/100</span></div>
+          <div style="height:6px;background:var(--bg3);border-radius:4px;"><div style="height:100%;width:78%;background:var(--text3);border-radius:4px;"></div></div>
+        </div>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item"><div class="icon">⚡</div>LCP</div>
+        <div class="tech-item"><div class="icon">📐</div>CLS</div>
+        <div class="tech-item"><div class="icon">🖱️</div>FID</div>
+        <div class="tech-item"><div class="icon">🗺️</div>Sitemap</div>
+        <div class="tech-item"><div class="icon">🤖</div>Robots.txt</div>
+        <div class="tech-item"><div class="icon">🔗</div>Canonicals</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ON-PAGE SEO -->
+<div style="background:var(--bg2);">
+<div id="onpage" class="container">
+<div class="service-section">
+  <div class="service-section-grid reverse">
+    <div class="service-visual fade-up">
+      <h4 style="margin-bottom:20px;">On-Page Optimisation Checklist</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> Title tag optimised with primary keyword
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> Meta description under 160 characters
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> H1–H6 hierarchy correctly structured
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> Internal linking optimised
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> Image alt tags and compression
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> URL structure clean and descriptive
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> Keyword density and LSI terms balanced
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg3);border-radius:8px;font-size:0.85rem;">
+          <span style="color:var(--accent)">✓</span> E-E-A-T signals strengthened
+        </div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="badge">Service 02</div>
+      <h2>On-Page <span class="highlight">SEO</span></h2>
+      <p style="margin:16px 0;">Great content ranks only when it's perfectly optimised. I audit and optimise every element of your pages — from title tags to content depth — to maximise rankings and click-through rates.</p>
+      <div class="service-list">
+        <div class="service-list-item">
+          <span class="service-list-icon">🎯</span>
+          <div><strong>Keyword Research & Mapping</strong><p style="font-size:0.9rem;margin:4px 0 0;">Find high-intent, low-competition keywords and map them to the right pages.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">📄</span>
+          <div><strong>Content Optimisation</strong><p style="font-size:0.9rem;margin:4px 0 0;">Rewrite and restructure existing content to outrank competitors.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">🔗</span>
+          <div><strong>Internal Linking Strategy</strong><p style="font-size:0.9rem;margin:4px 0 0;">Build a smart link structure that passes authority to money pages.</p></div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Optimise My Pages →</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- CONTENT STRATEGY -->
+<div id="content" class="container">
+<div class="service-section">
+  <div class="service-section-grid">
+    <div class="fade-up">
+      <div class="badge">Service 03</div>
+      <h2>Content <span class="highlight">Strategy</span></h2>
+      <p style="margin:16px 0;">Content is your biggest SEO asset. I build data-driven content strategies that establish topical authority, attract high-intent traffic, and convert visitors into customers.</p>
+      <div class="service-list">
+        <div class="service-list-item">
+          <span class="service-list-icon">🗺️</span>
+          <div><strong>Content Gap Analysis</strong><p style="font-size:0.9rem;margin:4px 0 0;">Find topics your competitors rank for that you're missing out on.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">📅</span>
+          <div><strong>Content Calendar</strong><p style="font-size:0.9rem;margin:4px 0 0;">A 3–6 month roadmap of articles, landing pages, and cluster content.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">🏆</span>
+          <div><strong>Topical Authority Building</strong><p style="font-size:0.9rem;margin:4px 0 0;">Become the go-to resource in your niche with a pillar + cluster strategy.</p></div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Build My Content Strategy →</a>
+    </div>
+    <div class="service-visual fade-up">
+      <h4 style="margin-bottom:8px;">Content Cluster Model</h4>
+      <p style="font-size:0.8rem;color:var(--text3);margin-bottom:24px;">Topical authority structure</p>
+      <div style="text-align:center;">
+        <div style="display:inline-block;background:var(--accent);color:#000;padding:12px 24px;border-radius:10px;font-weight:700;font-size:0.85rem;margin-bottom:20px;">Pillar Page<br><span style="font-size:0.75rem;font-weight:400;">"SEO for Startups"</span></div>
+        <div style="height:20px;width:1px;background:var(--border);margin:0 auto;"></div>
+        <div style="display:flex;gap:12px;justify-content:center;margin-top:8px;flex-wrap:wrap;">
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:0.75rem;text-align:center;min-width:80px;">
+            Cluster 1<br><span style="color:var(--text3)">Technical SEO</span>
+          </div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:0.75rem;text-align:center;min-width:80px;">
+            Cluster 2<br><span style="color:var(--text3)">On-Page</span>
+          </div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:0.75rem;text-align:center;min-width:80px;">
+            Cluster 3<br><span style="color:var(--text3)">Link Building</span>
+          </div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font-size:0.75rem;text-align:center;min-width:80px;">
+            Cluster 4<br><span style="color:var(--text3)">Analytics</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:24px;padding:16px;background:var(--bg3);border-radius:10px;">
+        <div style="font-size:0.8rem;color:var(--text2);margin-bottom:8px;">Expected outcome:</div>
+        <div style="font-family:var(--font-display);font-size:1.4rem;color:var(--accent);">3× Topical Coverage</div>
+        <div style="font-size:0.8rem;color:var(--text3);">vs. ungrouped blog posts</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- LOCAL SEO -->
+<div style="background:var(--bg2);">
+<div id="local" class="container">
+<div class="service-section">
+  <div class="service-section-grid reverse">
+    <div class="service-visual fade-up">
+      <h4 style="margin-bottom:20px;">Local SEO Results</h4>
+      <div style="background:var(--bg3);border-radius:12px;padding:20px;margin-bottom:16px;">
+        <div style="font-size:0.8rem;color:var(--text3);margin-bottom:8px;font-family:var(--font-mono);">Google Maps Ranking</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#000;">#1</div>
+          <div>
+            <div style="font-weight:600;font-size:0.9rem;">Mumbai Digital Agency</div>
+            <div style="font-size:0.8rem;color:var(--text3);">Open · 4.9 ★ (182 reviews)</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="background:var(--bg3);border-radius:10px;padding:16px;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--accent);">40+</div>
+          <div style="font-size:0.8rem;color:var(--text2);">Local Keywords<br>Top 3</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:10px;padding:16px;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--accent2);">5×</div>
+          <div style="font-size:0.8rem;color:var(--text2);">Google Maps<br>Views</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:10px;padding:16px;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--accent3);">218%</div>
+          <div style="font-size:0.8rem;color:var(--text2);">Direction<br>Requests</div>
+        </div>
+        <div style="background:var(--bg3);border-radius:10px;padding:16px;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--text);">3 Mo</div>
+          <div style="font-size:0.8rem;color:var(--text2);">To See<br>Results</div>
+        </div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="badge">Service 04</div>
+      <h2>Local <span class="highlight">SEO</span></h2>
+      <p style="margin:16px 0;">Dominate local search results and Google Maps for your city. Perfect for businesses in Mumbai, Delhi, Bangalore, and across India targeting local customers.</p>
+      <div class="service-list">
+        <div class="service-list-item">
+          <span class="service-list-icon">📍</span>
+          <div><strong>Google Business Profile Optimisation</strong><p style="font-size:0.9rem;margin:4px 0 0;">Fully optimise your GMB for maximum visibility and conversions.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">🏙️</span>
+          <div><strong>Local Citation Building</strong><p style="font-size:0.9rem;margin:4px 0 0;">Build consistent NAP citations across 50+ local directories.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">⭐</span>
+          <div><strong>Review Strategy</strong><p style="font-size:0.9rem;margin:4px 0 0;">Build a steady stream of genuine 5-star reviews ethically.</p></div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Dominate Local Search →</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- INTERNATIONAL SEO -->
+<div id="international" class="container">
+<div class="service-section">
+  <div class="service-section-grid">
+    <div class="fade-up">
+      <div class="badge">Service 05</div>
+      <h2>International <span class="highlight">SEO</span></h2>
+      <p style="margin:16px 0;">Ready to go beyond India? I help Indian businesses expand their organic reach to the US, UK, UAE, Australia, and other key markets.</p>
+      <div class="service-list">
+        <div class="service-list-item">
+          <span class="service-list-icon">🌐</span>
+          <div><strong>Hreflang Implementation</strong><p style="font-size:0.9rem;margin:4px 0 0;">Ensure the right content is served to users in the right country.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">🗺️</span>
+          <div><strong>Geo-Targeting Strategy</strong><p style="font-size:0.9rem;margin:4px 0 0;">Target specific markets with country-coded domains or subdirectories.</p></div>
+        </div>
+        <div class="service-list-item">
+          <span class="service-list-icon">✍️</span>
+          <div><strong>Localised Content</strong><p style="font-size:0.9rem;margin:4px 0 0;">Adapt content for cultural relevance and local search behaviour.</p></div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Go Global →</a>
+    </div>
+    <div class="service-visual fade-up">
+      <h4 style="margin-bottom:20px;">Markets Served</h4>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:var(--bg3);border-radius:8px;">
+          <span style="font-size:0.9rem;">🇮🇳 India</span><span style="color:var(--accent);font-size:0.85rem;">Primary Market</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:var(--bg3);border-radius:8px;">
+          <span style="font-size:0.9rem;">🇺🇸 United States</span><span style="color:var(--accent2);font-size:0.85rem;">Top Expansion</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:var(--bg3);border-radius:8px;">
+          <span style="font-size:0.9rem;">🇬🇧 United Kingdom</span><span style="color:var(--text2);font-size:0.85rem;">Active</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:var(--bg3);border-radius:8px;">
+          <span style="font-size:0.9rem;">🇦🇪 UAE / Dubai</span><span style="color:var(--text2);font-size:0.85rem;">Active</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px;background:var(--bg3);border-radius:8px;">
+          <span style="font-size:0.9rem;">🇦🇺 Australia</span><span style="color:var(--text2);font-size:0.85rem;">Active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- CTA -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="cta-section fade-up">
+      <h2 style="margin-bottom:16px;">Not Sure Which <span class="highlight">Service You Need?</span></h2>
+      <p style="max-width:500px;margin:0 auto 36px;">Book a free strategy call. I'll audit your site and recommend exactly what will move the needle fastest for your business.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Get Free Audit →</a>
+        <a href="tel:+919619955997" class="btn btn-outline">📞 +91 96199 55997</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

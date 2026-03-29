@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Jayesh Nautiyal | Freelance SEO Expert India</title>
+  <meta name="description" content="Learn about Jayesh Nautiyal — freelance SEO expert with 5+ years experience helping Indian startups and businesses rank on Google." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .about-grid { display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:center; }
+    .avatar-wrapper {
+      position:relative;
+    }
+    .avatar-box {
+      width:100%;aspect-ratio:1;
+      background:linear-gradient(135deg,var(--bg3),var(--card));
+      border:1px solid var(--border);
+      border-radius:24px;
+      display:flex;align-items:center;justify-content:center;
+      font-family:var(--font-display);
+      font-size:8rem;
+      position:relative;overflow:hidden;
+    }
+    .avatar-box::before {
+      content:'';position:absolute;inset:0;
+      background:radial-gradient(ellipse at 30% 30%,rgba(0,229,160,0.1),transparent 60%);
+    }
+    .avatar-badge {
+      position:absolute;bottom:-16px;right:-16px;
+      background:var(--card);border:1px solid var(--border);
+      border-radius:14px;padding:16px 20px;
+      display:flex;align-items:center;gap:12px;
+      box-shadow:var(--shadow);
+    }
+    .avatar-badge .num { font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--accent); }
+    .avatar-badge .lbl { font-size:0.8rem;color:var(--text2);line-height:1.3; }
+    .tools-grid { display:flex;flex-wrap:wrap;gap:10px;margin-top:24px; }
+    .tool-chip {
+      display:flex;align-items:center;gap:6px;
+      padding:6px 14px;border:1px solid var(--border);
+      border-radius:100px;font-size:0.82rem;color:var(--text2);
+      background:var(--card);
+      transition:all var(--transition);
+    }
+    .tool-chip:hover { border-color:var(--accent);color:var(--accent); }
+    .timeline { display:flex;flex-direction:column;gap:0; }
+    .timeline-item {
+      display:flex;gap:24px;padding-bottom:36px;
+      position:relative;
+    }
+    .timeline-item::before {
+      content:'';position:absolute;left:19px;top:40px;bottom:0;
+      width:1px;background:var(--border);
+    }
+    .timeline-item:last-child::before { display:none; }
+    .timeline-dot {
+      width:40px;height:40px;min-width:40px;
+      border:2px solid var(--accent);
+      border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:var(--bg);
+      font-size:1rem;
+    }
+    .timeline-content .year {
+      font-family:var(--font-mono);font-size:0.75rem;
+      color:var(--accent);margin-bottom:4px;
+    }
+    .timeline-content h4 { margin-bottom:4px; }
+    .timeline-content p { font-size:0.9rem; }
+    @media(max-width:768px){
+      .about-grid{grid-template-columns:1fr;}
+      .avatar-wrapper{max-width:320px;margin:0 auto;}
+    }
+  </style>
+</head>
+<body>
+<script src="assets/js/layout.js"></script>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">About Me</div>
+      <h1>The SEO Expert <span class="highlight">Behind the Rankings</span></h1>
+      <p>5+ years of hands-on SEO experience, 50+ projects delivered, and one obsession: getting my clients to page one of Google.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="about-grid">
+      <div class="avatar-wrapper fade-up">
+        <div class="avatar-box">
+          <span style="position:relative;z-index:1;">🧑‍💻</span>
+        </div>
+        <div class="avatar-badge">
+          <div class="num">5+</div>
+          <div class="lbl">Years of<br>SEO Experience</div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <h2 style="margin-bottom:20px;">Hi, I'm <span class="highlight">Jayesh Nautiyal</span></h2>
+        <p style="margin-bottom:16px;font-size:1.05rem;">I'm a freelance SEO consultant based in India with a passion for helping startups and growing businesses build lasting organic presence on Google.</p>
+        <p style="margin-bottom:16px;">I've worked with 50+ brands across India — from bootstrapped startups to Series A companies — delivering measurable traffic growth, keyword rankings, and revenue from organic search.</p>
+        <p style="margin-bottom:32px;">Unlike agencies that hide behind account managers, you work directly with me. I understand your business, I build your strategy, and I execute it.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px;">
+          <a href="contact.html" class="btn btn-primary">Work With Me →</a>
+          <a href="tel:+919619955997" class="btn btn-outline">📞 Call Me</a>
+        </div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--border);">
+          <div><strong style="display:block;font-size:1.5rem;color:var(--accent);">50+</strong><span style="font-size:0.85rem;color:var(--text2);">Brands Ranked</span></div>
+          <div><strong style="display:block;font-size:1.5rem;color:var(--accent2);">300%</strong><span style="font-size:0.85rem;color:var(--text2);">Avg Traffic Growth</span></div>
+          <div><strong style="display:block;font-size:1.5rem;color:var(--accent3);">98%</strong><span style="font-size:0.85rem;color:var(--text2);">Client Retention</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section class="section" style="background:var(--bg2);padding-top:0;">
+  <div class="container">
+    <div class="section-header fade-up" style="margin-bottom:48px;">
+      <h2>Why Choose Me Over <span class="highlight">An Agency?</span></h2>
+    </div>
+    <div class="grid-3">
+      <div class="card fade-up">
+        <div class="icon-box">🎯</div>
+        <h4>Direct Execution</h4>
+        <p>No junior staff, no account managers. You work directly with me — the strategist and executor in one.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">💡</div>
+        <h4>Strategy First</h4>
+        <p>I don't just do tasks — I build a growth strategy tailored to your market, competition, and goals.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">📈</div>
+        <h4>ROI Focused</h4>
+        <p>Every decision is tied to business outcomes. I track rankings, traffic, leads — not vanity metrics.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">🔍</div>
+        <h4>Transparent Reporting</h4>
+        <p>Monthly reports that show exactly what was done, what moved, and what's next — in plain English.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">⚡</div>
+        <h4>Fast Execution</h4>
+        <p>No committee approvals or delays. Decisions are made fast and changes go live quickly.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">🇮🇳</div>
+        <h4>Indian Market Expert</h4>
+        <p>Deep understanding of Indian search behaviour, local markets, and competition across cities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:80px;align-items:center;">
+      <div class="fade-up">
+        <div class="badge">My Toolkit</div>
+        <h2>Tools I Use to <span class="highlight">Win Rankings</span></h2>
+        <p style="margin:20px 0;">I use the same premium tools that top agencies use — so you get enterprise-level analysis at freelancer rates.</p>
+        <div class="tools-grid">
+          <div class="tool-chip">📊 Ahrefs</div>
+          <div class="tool-chip">🔍 SEMrush</div>
+          <div class="tool-chip">🖥️ Screaming Frog</div>
+          <div class="tool-chip">📈 Google Analytics 4</div>
+          <div class="tool-chip">🎯 Google Search Console</div>
+          <div class="tool-chip">⚡ PageSpeed Insights</div>
+          <div class="tool-chip">🔗 Majestic</div>
+          <div class="tool-chip">📝 Surfer SEO</div>
+          <div class="tool-chip">🗺️ Moz</div>
+          <div class="tool-chip">🔧 Rank Math</div>
+          <div class="tool-chip">📋 Notion</div>
+          <div class="tool-chip">🤖 AI Writing Tools</div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="badge">My Journey</div>
+        <h2 style="margin-bottom:32px;">Experience <span class="highlight">Timeline</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">🌱</div>
+            <div class="timeline-content">
+              <div class="year">2019 – 2020</div>
+              <h4>Started in SEO</h4>
+              <p>Began with content marketing and on-page SEO, grew blogs to 100K+ monthly visitors.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">📈</div>
+            <div class="timeline-content">
+              <div class="year">2020 – 2022</div>
+              <h4>Agency & Freelance Work</h4>
+              <p>Worked with digital agencies handling SEO for e-commerce, SaaS, and local businesses.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🚀</div>
+            <div class="timeline-content">
+              <div class="year">2022 – 2023</div>
+              <h4>Startup SEO Specialist</h4>
+              <p>Focused on growth-stage startups, built scalable SEO systems for Series A/B companies.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🏆</div>
+            <div class="timeline-content">
+              <div class="year">2024 – Present</div>
+              <h4>Full-Stack SEO Consultant</h4>
+              <p>Now managing 10+ clients across India simultaneously with a proven SEO framework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-section fade-up">
+      <h2 style="margin-bottom:16px;">Ready to Work <span class="highlight">Together?</span></h2>
+      <p style="max-width:480px;margin:0 auto 36px;">Let's hop on a free call, discuss your goals, and see if we're a good fit. No pressure, no obligation.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Book Free Call →</a>
+        <a href="startups/case-studies.html" class="btn btn-outline">View Case Studies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
