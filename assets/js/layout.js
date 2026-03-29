@@ -27,8 +27,22 @@ function injectHeader() {
     <a href="blog/index.html">Blog</a>
     <a href="contact.html" class="nav-cta">Let's Talk →</a>
   </div>
-  `;
-  document.body.insertAdjacentHTML('afterbegin', html);
+  `;document.addEventListener("DOMContentLoaded", function () {
+
+  function injectHeader() {
+    const html = `...your header code...`;
+    document.getElementById("header").innerHTML = html;
+  }
+
+  function injectFooter() {
+    const html = `...your footer code...`;
+    document.getElementById("footer").innerHTML = html;
+  }
+
+  injectHeader();
+  injectFooter();
+
+});
 }
 
 // ===== INJECT FOOTER =====
